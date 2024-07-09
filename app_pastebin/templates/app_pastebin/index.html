@@ -1,5 +1,25 @@
 {% extends 'base-generic.html' %}
 
+{% load pygmentize %}
+
 {% block main %}
 <h1 class="text-center">Home</h1>
+<div class="mx-auto col-8">
+{% for paste in pastes %}
+    <div class="card mt-3">
+        <div class="card-title text-center h4">
+            {% if paste.title %}
+            <div class="mt-2">{{ paste.title }}</div>
+            <hr>
+            {% endif %}
+        </div>
+        <div class="card-body">
+            <div class="code">
+            {{ paste.content|pygmentize:"python"|safe }}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
 {% endblock %}

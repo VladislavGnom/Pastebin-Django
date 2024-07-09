@@ -3,4 +3,11 @@
 {% block main %}
 <h1 class="text-center">New Paste</h1>
 
+<div class="mx-auto col-8 text-center">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success btn-">Create Paste</button>
+    </form>
+</div>
 {% endblock %}
