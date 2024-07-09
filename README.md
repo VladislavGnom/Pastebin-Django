@@ -1,0 +1,1 @@
+Hello, my web application is an analogue of a service for storing pieces of text - Pastebin. It has not become a full-fledged substitute for its older brother and most likely will not become, but this is an experience for me personally in the development of this application. I’m very happy if you check out my efforts :)
